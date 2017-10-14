@@ -12,7 +12,7 @@
 
 他有四个构造方法，用的最多的还是无参的构造方法。Map<String, String> m = new HashMap<String, String>(); 构造一个具有默认初始容量 (16) 和默认加载因子 (0.75) 的空 HashMap。
 
-![Image text](https://github.com/wenbochang888/DiaryRecord/blob/master/img/HashMapJdk.png)
+![Image text](https://github.com/wenbochang888/JDK/blob/master/img/HashMapJdk.png)
 
 
 
@@ -28,7 +28,7 @@ HashMap中主要是通过key的hashCode来计算hash值的，只要hashCode相�
 存取几乎O(1)的原因是：每一个key对应一个hashCode(类似于一个地址,或者数组的下表)，存取自然而然就是O(1)了。但内存中并没有那么大的空间，怎么办呢。这就产生了Hash冲突。
 最简单的解决办法就是在哈希或者链地址法。
 
-![Image text](https://github.com/wenbochang888/DiaryRecord/blob/master/img/HashMapStruct.jpg)
+![Image text](https://github.com/wenbochang888/JDK/blob/master/img/HashMapStruct.jpg)
 
 # HashMap的Entry类
 

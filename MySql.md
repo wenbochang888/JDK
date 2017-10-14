@@ -7,13 +7,13 @@
 
 说一下遇到的问题。阿里云有自带的MySql 5.7.16版本。因为没有密码所以进不去MySql里面，
 尝试过mysql -u -p 无密码直接进去，无奈是进不去滴（你也甭想了）
-![Image text](https://github.com/wenbochang888/DiaryRecord/blob/master/img/MySqlVersion.jpg)
+![Image text](https://github.com/wenbochang888/JDK/blob/master/img/MySqlVersion.jpg)
 
 # reset MySql 密码如下步骤
 
 1：首先打开（vi /etc/my.cnf）MySql的配置文件 如下。加上这一行 skip-grant-tables。
 这个作用是不用输入用户名和密码就可以进去。
-![Image text](https://github.com/wenbochang888/DiaryRecord/blob/master/img/SettingSql.jpg)
+![Image text](https://github.com/wenbochang888/JDK/blob/master/img/SettingSql.jpg)
 
 
 2：service mysqld restart(重要，负责配置文件不生效)。然后命令 mysql直接进去MySQl,
@@ -30,7 +30,7 @@ MySQL 5.7.5 and earlier:
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('MyNewPass');
 
 5：加入第四步出错，刷新一下权限。flush privileges; 在继续执行第四部。
-![Image text](https://github.com/wenbochang888/DiaryRecord/blob/master/img/Document.jpg)
+![Image text](https://github.com/wenbochang888/JDK/blob/master/img/Document.jpg)
 
 6：第一步的配置文件skip-grant-tables注释掉。service mysqld restart（重要）
 
