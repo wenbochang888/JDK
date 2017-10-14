@@ -4,7 +4,7 @@ public void add(int index,E element)
 
 将指定的元素插入此列表中的指定位置。向右移动当前位于该位置的元素（如果有）以及所有后续元素（将其索引加 1）。
 
-![Image text](https://github.com/wenbochang888/DiaryRecord/blob/master/img/ArrayListAdd.png)
+![Image text](https://github.com/wenbochang888/JDK/blob/master/img/ArrayListAdd.png)
 
 # 1. public void add(int index, E element)
 
