@@ -1,3 +1,33 @@
+/*
+占坑
+
+用ForkJoin实现，代码忘在机房了，mdzz.
+
+ForkJoinPool实现比newFixedThreadPool还要慢，为什么1.7还要加入ForkJoin呢
+
+百思不得其解
+
+2017年9月21日21:18:21
+*/
+
+/*
+	2017年10月15日16:16:44
+
+	今天看了文章好像ForkJoinPool不停创建子线程
+
+	然后要不停的gc，所以要慢一点
+
+	然后今天我用ForkJoinPool计算1到8000000
+
+	准备测试下ThreadPool和ForkJoinPool的性能，然后我ForkJoinPool的条件是
+
+	end-start < 10 妈的忘记改了
+
+	这样就创建了80W个子线程，然后不出意外
+
+	电脑直接挂了，按什么都没有反应，直接崩了
+*/
+
 package com.test;
 
 import java.util.concurrent.Callable;
@@ -94,49 +124,3 @@ class Prime {
 		return true;
 	}
 }
-
-
-/*
-占坑
-
-用ForkJoin实现，代码忘在机房了，mdzz.
-
-ForkJoinPool实现比newFixedThreadPool还要慢，为什么1.7还要加入ForkJoin呢
-
-百思不得其解
-
-2017年9月21日21:18:21
-*/
-
-/*
-	今天看了文章好像ForkJoinPool不停创建子线程
-
-	然后要不停的gc，所以要慢一点
-
-	然后今天我用ForkJoinPool计算1到8000000
-
-	准备测试下ThreadPool和ForkJoinPool的性能，然后我ForkJoinPool的条件是
-
-	end-start < 10 妈的忘记改了
-
-	这样就创建了80W个子线程，然后不出意外
-
-	电脑直接挂了，按什么都没有反应，直接崩了
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
